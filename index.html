@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Numerplate generator</title>
+	<style>
+@font-face {
+    font-family: 'UKNumberPlate';
+    src: url('/fonts/UKNumberPlate.ttf');
+}
+@media print{@page {size: landscape}}
+
+* {
+    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+    color-adjust: exact !important;                 /*Firefox*/
+}
+
+.numberplate {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;    
+    height: 225px;
+    width: 1100px;
+	background-image: url('images/uk-scheme.png');
+    font-family: UKNumberPlate;
+    font-size:14em;
+    padding:30px 30px 30px 120px;
+    vertical-align: middle;
+    text-align: center;
+} 
+	</style>
+</head>
+<body>
+	<div class="numberplate" contenteditable="true">UK 12 1234</div>	
+
+</body>
+</html>
